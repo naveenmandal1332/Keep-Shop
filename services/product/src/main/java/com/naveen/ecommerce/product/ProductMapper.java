@@ -27,7 +27,7 @@ public class ProductMapper {
         product.getCategory().getName(), product.getCategory().getDescription());
   }
 
-  public ProductPurchaseResponse toProductPurchaseResponse(Product product, Integer quantity) {
+  public ProductPurchaseResponse toProductPurchaseResponse(Product product, double quantity) {
     return new ProductPurchaseResponse(product.getId(), product.getName(), product.getDescription(), quantity,
         product.getPrice());
   }
